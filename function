@@ -1,0 +1,6 @@
+%  Enter the first order differential equation 
+%            dy/dx = f(x,y)
+
+function f = adambash(x,y)
+
+f = 3*x + 0.5*y  ;

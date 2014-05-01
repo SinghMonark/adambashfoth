@@ -1,0 +1,22 @@
+%  Function to calculate the first three values using Euler Method
+
+function [y2,y3,y4] = euler(y0,h);
+
+
+
+x(1) = 0;
+    
+for j = (1:2)
+    
+   
+    x(j+1) = x(j) + h ;
+end
+
+
+y1 = y0;
+
+y2(1) = y1 + h * adambash(x(1),y1);
+
+y3(1) = y2 + h * adambash(x(2),y2);
+
+y4(1) = y3 + h * adambash(x(3),y3);
